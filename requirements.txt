@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+pydantic
+celery
+redis
+playwright
+playwright-stealth
+openai
+python-dotenv
+alembic
+jinja2
