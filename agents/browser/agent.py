@@ -1,6 +1,7 @@
 import time
 import random
 import logging
+import asyncio
 from typing import Dict, Any, List, Optional
 from agents.base import BaseAgent
 from core.intelligence.recruiter_requirements import RecruiterRequirements
@@ -17,15 +18,18 @@ class BrowserAgent(BaseAgent):
         super().__init__(name="Browser", role="Recruiting Operations", job_id=job_id, db=db)
         self.chrome = ChromeMCPWrapper()
         
-    def close(self):
-        self.chrome.close()
+    async def close(self):
+        await self.chrome.close()
         
-    def run(self, requirements: RecruiterRequirements) -> List[Dict[str, Any]]:
+    async def run(self, requirements: RecruiterRequirements) -> List[Dict[str, Any]]:
         """
         Runs the autonomous search and extraction workflow based on recruiter requirements.
         """
         trace("Browser Intelligence Started")
         
+        # 0. Initialize the browser asynchronously
+        await self.chrome.start()
+
         # 1. Dynamic Search Strategy
         search_query = f"{requirements.role} {requirements.location}"
         if requirements.required_skills:
@@ -34,10 +38,10 @@ class BrowserAgent(BaseAgent):
         self.log(f"Initiating autonomous candidate search: '{search_query}'", step="extraction")
         
         # 2. Execute Search
-        self.chrome.search_candidates(search_query)
+        await self.chrome.search_candidates(search_query)
         
         # 3. Extract Candidate Entities (Phase 1: Entity-Centric)
-        candidates = self.chrome.extract_profiles()
+        candidates = await self.chrome.extract_profiles()
         
         if not candidates:
             self.log("No candidate entities discovered. Process halted.", level=logging.ERROR, step="extraction")
@@ -60,16 +64,16 @@ class BrowserAgent(BaseAgent):
             self.log(f"[{i+1}/{len(candidates)}] Deep-analyzing: {name}", step="extraction")
             
             # Humanoid behavior pacing
-            time.sleep(random.uniform(2, 4))
+            await asyncio.sleep(random.uniform(2, 4))
             
             try:
-                is_ready, readiness_score = self.chrome.open_profile(url)
+                is_ready, readiness_score = await self.chrome.open_profile(url)
                 
                 if is_ready:
-                    intelligence = self.chrome.extract_candidate_intelligence()
+                    intelligence = await self.chrome.extract_candidate_intelligence()
                 else:
                     self.log(f"Incomplete profile readiness for {name}. Falling back.", step="extraction")
-                    intelligence = self.chrome._stage2_light_enrichment()
+                    intelligence = await self.chrome._stage2_light_enrichment()
                 
                 full_candidate = {
                     **candidate,
@@ -84,7 +88,7 @@ class BrowserAgent(BaseAgent):
                 self.log(f"Enrichment failure for {name}: {e}", level=logging.ERROR, step="extraction")
                 hydrated_candidates.append({**candidate, "enrichment_failed": True})
             finally:
-                self.chrome.close_profile_page()
+                await self.chrome.close_profile_page()
             
             if len(hydrated_candidates) >= requirements.max_candidates * 1.5:
                 break

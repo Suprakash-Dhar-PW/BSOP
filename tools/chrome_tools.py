@@ -2,10 +2,10 @@ import os
 import json
 import logging
 import random
-import time
+import asyncio
 import re
 from typing import Dict, Any, List, Optional, Tuple, Union
-from playwright.sync_api import sync_playwright, Page, BrowserContext, Browser
+from playwright.async_api import async_playwright, Page, BrowserContext, Browser
 from tools.linkedin_session import LinkedInSessionManager
 from config.selectors import LINKEDIN_SELECTORS
 
@@ -43,15 +43,15 @@ class ChromeMCPWrapper:
         self.context = None
         self.page = None
         self.session_manager = LinkedInSessionManager()
-        self._start_browser()
 
-    def _start_browser(self):
+    async def start(self):
         """Starts Playwright with anti-detection and session management."""
         try:
             if self.playwright:
-                self.close()
+                await self.close()
             
-            self.playwright = sync_playwright().start()
+            playwright_mgr = async_playwright()
+            self.playwright = await playwright_mgr.start()
             
             launch_args = [
                 "--disable-blink-features=AutomationControlled",
@@ -62,14 +62,14 @@ class ChromeMCPWrapper:
                 "--disable-setuid-sandbox",
             ]
             
-            self.browser = self.playwright.chromium.launch(
+            self.browser = await self.playwright.chromium.launch(
                 headless=self.headless,
                 args=launch_args
             )
             
             storage_state = self.session_manager.get_storage_state()
             
-            self.context = self.browser.new_context(
+            self.context = await self.browser.new_context(
                 storage_state=storage_state,
                 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 viewport={"width": 1440, "height": 900},
@@ -77,12 +77,12 @@ class ChromeMCPWrapper:
             )
             
             # Anti-detection stealth scripts
-            self.context.add_init_script("""
+            await self.context.add_init_script("""
                 Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
                 window.chrome = { runtime: {} };
             """)
             
-            self.page = self.context.new_page()
+            self.page = await self.context.new_page()
             os.makedirs("debug", exist_ok=True)
             self.logger.info("Browser initialized with session persistence.")
             
@@ -90,25 +90,25 @@ class ChromeMCPWrapper:
             self.logger.error(f"Critical browser startup failure: {e}")
             raise
 
-    def ensure_active(self):
+    async def ensure_active(self):
         """Ensures the browser session is active and page is responsive."""
         try:
             if not self.browser or not self.page or self.page.is_closed():
                 self.logger.warning("Browser or page lost. Recovering...")
-                self._start_browser()
+                await self.start()
             # Test connectivity
-            self.page.evaluate("1")
+            await self.page.evaluate("1")
         except Exception:
             self.logger.warning("Page unresponsive. Restarting...")
-            self._start_browser()
+            await self.start()
 
-    def close(self):
+    async def close(self):
         """Robust cleanup of Playwright resources."""
         try:
-            if self.page: self.page.close()
-            if self.context: self.context.close()
-            if self.browser: self.browser.close()
-            if self.playwright: self.playwright.stop()
+            if self.page: await self.page.close()
+            if self.context: await self.context.close()
+            if self.browser: await self.browser.close()
+            if self.playwright: await self.playwright.stop()
         except Exception as e:
             self.logger.debug(f"Cleanup error (likely connection closed): {e}")
         finally:
@@ -118,35 +118,35 @@ class ChromeMCPWrapper:
     # HUMAN-LIKE INTERACTIONS
     # =====================================================
 
-    def human_delay(self, min_s=1.0, max_s=3.0):
-        time.sleep(random.uniform(min_s, max_s))
+    async def human_delay(self, min_s=1.0, max_s=3.0):
+        await asyncio.sleep(random.uniform(min_s, max_s))
 
-    def human_type(self, selector: str, text: str):
-        self.ensure_active()
-        self.page.wait_for_selector(selector)
-        self.page.click(selector)
+    async def human_type(self, selector: str, text: str):
+        await self.ensure_active()
+        await self.page.wait_for_selector(selector)
+        await self.page.click(selector)
         for char in text:
-            self.page.type(selector, char, delay=random.randint(50, 150))
-        self.human_delay(0.5, 1.0)
+            await self.page.type(selector, char, delay=random.randint(50, 150))
+        await self.human_delay(0.5, 1.0)
 
-    def human_scroll(self):
-        self.ensure_active()
+    async def human_scroll(self):
+        await self.ensure_active()
         scroll_dist = random.randint(300, 700)
-        self.page.evaluate(f"window.scrollBy({{top: {scroll_dist}, behavior: 'smooth'}})")
-        self.human_delay(1.0, 2.0)
+        await self.page.evaluate(f"window.scrollBy({{top: {scroll_dist}, behavior: 'smooth'}})")
+        await self.human_delay(1.0, 2.0)
 
     # =====================================================
     # EXTRACTION CORE
     # =====================================================
 
-    def search_candidates(self, keywords: str, max_retries=3):
+    async def search_candidates(self, keywords: str, max_retries=3):
         for attempt in range(max_retries):
             try:
-                self.ensure_active()
+                await self.ensure_active()
                 self.logger.info(f"Searching: {keywords} (Attempt {attempt+1})")
                 url = f"https://www.linkedin.com/search/results/people/?keywords={keywords.replace(' ', '%20')}"
                 
-                self.page.goto(url, wait_until="networkidle", timeout=60000)
+                await self.page.goto(url, wait_until="load", timeout=60000)
                 
                 # Check for login wall
                 if "login" in self.page.url or "checkpoint" in self.page.url:
@@ -154,37 +154,37 @@ class ChromeMCPWrapper:
                     return False
 
                 # Hydrate results
-                self._hydrate_results()
+                await self._hydrate_results()
                 return True
             except Exception as e:
                 self.logger.error(f"Search attempt {attempt+1} failed: {e}")
-                self.human_delay(2, 5)
-                self._start_browser() # Recovery
+                await self.human_delay(2, 5)
+                await self.start() # Recovery
         return False
 
-    def _hydrate_results(self):
+    async def _hydrate_results(self):
         """Scrolls and stabilizes the results page."""
         self.logger.info("Hydrating results...")
         for _ in range(random.randint(2, 4)):
-            self.human_scroll()
-        time.sleep(2)
+            await self.human_scroll()
+        await asyncio.sleep(2)
 
-    def extract_profiles(self) -> List[Dict[str, Any]]:
+    async def extract_profiles(self) -> List[Dict[str, Any]]:
         """
         Entity-Centric Extraction.
         Extracts candidate data by identifying profile links and traversing the DOM.
         """
-        self.ensure_active()
+        await self.ensure_active()
         self.logger.info("Executing entity-centric extraction...")
         
         try:
             # 1. Capture all candidate links
-            all_links = self.page.query_selector_all('a[href*="/in/"]')
+            all_links = await self.page.query_selector_all('a[href*="/in/"]')
             candidates_map = {}
             
             for link in all_links:
                 try:
-                    href = link.get_attribute("href")
+                    href = await link.get_attribute("href")
                     if not href: continue
                     
                     profile_url = href.split('?')[0]
@@ -195,7 +195,7 @@ class ChromeMCPWrapper:
                         continue
                     
                     # Get the card container
-                    container = link.evaluate_handle("""
+                    container = await link.evaluate_handle("""
                         el => {
                             let curr = el;
                             for (let i=0; i<10; i++) {
@@ -207,7 +207,7 @@ class ChromeMCPWrapper:
                         }
                     """)
                     
-                    text = container.evaluate("el => el.innerText")
+                    text = await container.evaluate("el => el.innerText")
                     lines = [l.strip() for l in text.split('\n') if l.strip()]
                     
                     if not lines: continue
@@ -233,7 +233,7 @@ class ChromeMCPWrapper:
                     continue
             
             candidates = list(candidates_map.values())
-            self.save_debug_snapshots(candidates)
+            await self.save_debug_snapshots(candidates)
             self.logger.info(f"Extracted {len(candidates)} unique candidates.")
             return candidates
             
@@ -247,16 +247,16 @@ class ChromeMCPWrapper:
                 return line
         return lines[2] if len(lines) > 2 else "Unknown"
 
-    def open_profile(self, url: str) -> Tuple[bool, float]:
+    async def open_profile(self, url: str) -> Tuple[bool, float]:
         try:
-            self.ensure_active()
-            self.page.goto(url, wait_until="load", timeout=30000)
-            self.human_delay(1, 3)
+            await self.ensure_active()
+            await self.page.goto(url, wait_until="load", timeout=30000)
+            await self.human_delay(1, 3)
             # Scroll a bit to trigger lazy loading of sections
-            self.human_scroll()
+            await self.human_scroll()
             
             try:
-                self.page.wait_for_selector(".pv-top-card, #about", timeout=5000)
+                await self.page.wait_for_selector(".pv-top-card, #about", timeout=5000)
                 return True, 100.0
             except:
                 return False, 50.0
@@ -264,29 +264,43 @@ class ChromeMCPWrapper:
             self.logger.error(f"Error opening profile {url}: {e}")
             return False, 0.0
 
-    def extract_candidate_intelligence(self) -> Dict[str, Any]:
+    async def extract_candidate_intelligence(self) -> Dict[str, Any]:
         """Deep profile extraction."""
         try:
-            self.ensure_active()
-            about = self.page.query_selector("#about, .pv-about-section")
-            experience = self.page.query_selector("#experience, .pv-experience-section")
+            await self.ensure_active()
+            about = await self.page.query_selector("#about, .pv-about-section")
+            experience = await self.page.query_selector("#experience, .pv-experience-section")
             
             return {
-                "about": about.inner_text() if about else "",
-                "experience_raw": experience.inner_text() if experience else "",
+                "about": await about.inner_text() if about else "",
+                "experience_raw": await experience.inner_text() if experience else "",
                 "extraction_confidence": 90.0,
                 "profile_enrichment_failed": False
             }
         except:
             return {"profile_enrichment_failed": True}
 
-    def close_profile_page(self):
+    async def _stage2_light_enrichment(self) -> Dict[str, Any]:
+        """Light profile extraction when full enrichment fails."""
+        try:
+            await self.ensure_active()
+            about = await self.page.query_selector(".pv-about-section")
+            return {
+                "about": await about.inner_text() if about else "",
+                "extraction_confidence": 50.0,
+                "profile_enrichment_failed": False
+            }
+        except:
+            return {"profile_enrichment_failed": True}
+
+    async def close_profile_page(self):
         pass
 
-    def save_debug_snapshots(self, data: List[Dict[str, Any]]):
+    async def save_debug_snapshots(self, data: List[Dict[str, Any]]):
+        import time
         ts = int(time.time())
         try:
-            self.page.screenshot(path=f"debug/extraction_{ts}.png")
+            await self.page.screenshot(path=f"debug/extraction_{ts}.png")
             with open(f"debug/extraction_{ts}.json", "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2)
         except:

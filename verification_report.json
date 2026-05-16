@@ -1,261 +1,490 @@
 {
   "Frontend Engineer Bengaluru": {
-    "count": 10,
+    "count": 17,
     "data": [
       {
-        "name": "Shyamasish Mohanty \n \n\nSenior Software Engineer @ Twilio | Frontend Engineer, JavaScript, React , typescript, npm\n\nBangalore Urban, Karnataka, India\n\nConnect\n\nCurrent: Senior Software Engineer at Twilio\n\nSomit Karmakar is a mutual connection",
-        "headline": "Shyamasish Mohanty \n \n\nSenior Software Engineer @ Twilio | Frontend Engineer, JavaScript, React , typescript, npm\n\nBangalore Urban, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/shyamasish-mohanty/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/shyamasish-mohanty/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Purnima Sharma \n \n\nSoftware Engineer at GoTo Group\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Software Engineer (L2) at GoTo Group\n\nGaurav Thadani is a mutual connection",
-        "headline": "Purnima Sharma \n \n\nSoftware Engineer at GoTo Group\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/purnimasharma-sde/"
+        "name": "Shyamasish Mohanty",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/somit-karmakar-20b66b3a2/",
+        "location": "Bangalore Urban, Karnataka, India",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Sagar Pethe \n\nSE-2 @ TekIP | UI/UX | Frontend Development | Angular | PES University\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Software Engineer - 2 at TekIP Knowledge Consulting Pvt. Ltd.",
-        "headline": "Sagar Pethe \n\nSE-2 @ TekIP | UI/UX | Frontend Development | Angular | PES University\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/sagar-pethe-baa411170/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/purnimasharma-sde/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Ramit Kundu \n \n\nSoftware Engineer at OMIO\n\nBengaluru, Karnataka, India\n\nFollow\n\nCurrent: Software Engineer at Omio\n\n68K followers\n\nParthiv Gundubogula is a mutual connection",
-        "headline": "Ramit Kundu \n \n\nSoftware Engineer at OMIO\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/ramit-kundu-b3b91014a/"
+        "name": "Shyamasish Mohanty",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/gaurav-thadani-520aab11b/",
+        "location": "Bangalore Urban, Karnataka, India",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Shasank Pandey \n \n\nSenior Software Engineer @ Intuit | ex-Walmart | ex-Adobe | React, Redux, ES6 | \nMentoring Frontend Engineers for Interviews.\nTopmate : topmate.io/shasank_pandey , \nPreplaced :  preplaced.in/profile/shasank-pandey\n\nBengaluru, Karnataka, India\n\nFollow\n\nCurrent: Senior Software Engineer at Intuit\n\n9K followers\n\nGaurav Thadani is a mutual connection",
-        "headline": "Shasank Pandey \n \n\nSenior Software Engineer @ Intuit | ex-Walmart | ex-Adobe | React, Redux, ES6 | \nMentoring Frontend Engineers for Interviews.\nTopmate : topmate.io/shasank_pandey , \nPreplaced :  preplaced.in/profile/shasank-pandey\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/shasank-pandey14/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/sagar-pethe-baa411170/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Ayush Tiwari \n \n\nSoftware Engineer 2 at Wayfair\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Software Engineer 2 at Wayfair - ...and frontend development to simplify stock planning...\n\nAayush Gupta is a mutual connection",
-        "headline": "Ayush Tiwari \n \n\nSoftware Engineer 2 at Wayfair\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/tayush/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/ramit-kundu-b3b91014a/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Triveni G \n \n\nSoftware Engineer II at Serko | Java, HTML, ReactJS, CSS, Javascript | Bengaluru, India |Seeking frontend opportunities\n\nBengaluru, Karnataka, India\n\nFollow\n\nCurrent: Software Engineer II at Serko Ltd.\n\n468 followers",
-        "headline": "Triveni G \n \n\nSoftware Engineer II at Serko | Java, HTML, ReactJS, CSS, Javascript | Bengaluru, India |Seeking frontend opportunities\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/triveni-g-84b63316b/"
+        "name": "Shyamasish Mohanty",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/parthiv-gundubogula-b760a7258/",
+        "location": "Bangalore Urban, Karnataka, India",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Ajay H M \n \n\nSoftware Developer | Full Stack Developer (React \u00b7 Python \u00b7 Django) | 3\u00d7 Intern \u00b7 Bengaluru \u00b7 Open to Work\n\nGreater Bengaluru Area\n\nConnect\n\nSummary: ...Science &amp; Design engineer (graduating 2026, K.S. Institute of Technology, Bengaluru) with 3...\n\nGautam keshri is a mutual connection",
-        "headline": "Ajay H M \n \n\nSoftware Developer | Full Stack Developer (React \u00b7 Python \u00b7 Django) | 3\u00d7 Intern \u00b7 Bengaluru \u00b7 Open to Work\n\nGreater Bengaluru Area",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/ajayhm11/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/shasank-pandey14/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Amit Sharma \n \n\nSDE @Swiggy ||  React Js || React Native\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Software Engineer at Swiggy\n\nAnurag Tiwari is a mutual connection",
-        "headline": "Amit Sharma \n \n\nSDE @Swiggy ||  React Js || React Native\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/amit-sharma-047434177/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/tayush/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Akhilesh Kumar \n \n\nSenior CPU Software Architect | Ex - Meta | NIT Jamshedpur\n\nJharkhand, India\n\nFollow\n\nCurrent: Senior CPU Software Engineer at Qualcomm\n\n13K followers\n\nAshutosh Rai is a mutual connection",
-        "headline": "Akhilesh Kumar \n \n\nSenior CPU Software Architect | Ex - Meta | NIT Jamshedpur\n\nJharkhand, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/trojancode95/"
+        "name": "Shyamasish Mohanty",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/aayushgupta02/",
+        "location": "Bangalore Urban, Karnataka, India",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/triveni-g-84b63316b/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/ajayhm11/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Shyamasish Mohanty",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/gautam-keshri/",
+        "location": "Bangalore Urban, Karnataka, India",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/amit-sharma-047434177/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Shyamasish Mohanty",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/anuragtiwarime/",
+        "location": "Bangalore Urban, Karnataka, India",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/trojancode95/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Shyamasish Mohanty",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/ashutoshrai725/",
+        "location": "Bangalore Urban, Karnataka, India",
+        "discovery_confidence": 0.9
       }
     ]
   },
   "Backend Engineer Bengaluru": {
-    "count": 10,
+    "count": 16,
     "data": [
       {
-        "name": "Rohan Vinod Chavhan \n \n\nBackend Engineer | Java, Spring Boot, Microservices | GCP Certified | Docker, Kubernetes, Jenkins, Rancher | Cloud Migration | Open to Work | Pune, Bengaluru | Remote\n\nPune District, Maharashtra, India\n\nConnect\n\nCurrent: Software Development Consultant I at Lumen Technologies - Java Backend Developer | Lumen Technology | Jan...",
-        "headline": "Rohan Vinod Chavhan \n \n\nBackend Engineer | Java, Spring Boot, Microservices | GCP Certified | Docker, Kubernetes, Jenkins, Rancher | Cloud Migration | Open to Work | Pune, Bengaluru | Remote\n\nPune District, Maharashtra, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/rohan3214/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/rohan3214/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Tushar Kanti Maji \n \n\nSoftware Engineer 3 @Cisco (Splunk - AppDynamics) | Ex-PhonePe, Juspay | Backend Engineer | Java, SQL, Nosql, Kafka, NodeJs, Javascript | Scalable Systems & Data Infra\n\nBengaluru, Karnataka, India\n\nFollow\n\nCurrent: Software Engineer 3 at Cisco\n\n14K followers",
-        "headline": "Tushar Kanti Maji \n \n\nSoftware Engineer 3 @Cisco (Splunk - AppDynamics) | Ex-PhonePe, Juspay | Backend Engineer | Java, SQL, Nosql, Kafka, NodeJs, Javascript | Scalable Systems & Data Infra\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/tusharkantimaji/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/tusharkantimaji/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Naveen K M \n \n\nSoftware Developer | Full Stack / Backend Engineer | SIH 2022 Runner-Up | Building Scalable Web Apps with React, Node.js & Cloud | Open to Opportunities in Bengaluru\n\nBengaluru, Karnataka, India\n\nFollow\n\nCurrent: Software Engineer at Ninestars Information Technologies Pvt. Ltd.\n\n1K followers\n\nKishan Singh and Yashwanth R Marad are mutual connections",
-        "headline": "Naveen K M \n \n\nSoftware Developer | Full Stack / Backend Engineer | SIH 2022 Runner-Up | Building Scalable Web Apps with React, Node.js & Cloud | Open to Opportunities in Bengaluru\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/naveen-k-m-130b341a6/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/naveen-k-m-130b341a6/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Ramit Kundu \n \n\nSoftware Engineer at OMIO\n\nBengaluru, Karnataka, India\n\nFollow\n\nCurrent: Software Engineer at Omio\n\n68K followers\n\nParthiv Gundubogula is a mutual connection",
-        "headline": "Ramit Kundu \n \n\nSoftware Engineer at OMIO\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/ramit-kundu-b3b91014a/"
+        "name": "Rohan Vinod Chavhan",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/kishan-singh-7a788529b/",
+        "location": "Backend Engineer | Java, Spring Boot, Microservices | GCP Certified | Docker, Kubernetes, Jenkins, Rancher | Cloud Migration | Open to Work | Pune, Bengaluru | Remote",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Venkat Ram \n \n\nSenior Engineer @ Apollo.io\n\nBengaluru, Karnataka, India\n\nFollow\n\nCurrent: Senior Software Engineer/Lead (L6) at Apollo.io\n\n5K followers\n\nKishan Singh is a mutual connection",
-        "headline": "Venkat Ram \n \n\nSenior Engineer @ Apollo.io\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/venkat5694/"
+        "name": "Rohan Vinod Chavhan",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/yashwanth-r-marad-968518386/",
+        "location": "Backend Engineer | Java, Spring Boot, Microservices | GCP Certified | Docker, Kubernetes, Jenkins, Rancher | Cloud Migration | Open to Work | Pune, Bengaluru | Remote",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Kalyan Kumar Dubey \n \n\nSWE (ML) @Roku | Ex SWE (ML) @Google | Ex Intern (Backend) @Sprinklr | IIIT Allahabad\n\nBengaluru, Karnataka, India\n\nFollow\n\nCurrent: Software Engineer (ML) at Roku\n\n8K followers\n\nRohit Singh is a mutual connection",
-        "headline": "Kalyan Kumar Dubey \n \n\nSWE (ML) @Roku | Ex SWE (ML) @Google | Ex Intern (Backend) @Sprinklr | IIIT Allahabad\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/kkdubey20/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/ananta-kumar-sahu/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "K ranga ravi Teja \n \n\nJava Backend Engineer | Spring Boot \nMySQL \n\nGreater Bengaluru Area\n\nMessage\n\nCurrent: Software Engineer at Clari5 (CustomerXPs)",
-        "headline": "K ranga ravi Teja \n \n\nJava Backend Engineer | Spring Boot \nMySQL \n\nGreater Bengaluru Area",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/k-ranga-ravi-teja/"
+        "name": "Rohan Vinod Chavhan",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/aayushgupta02/",
+        "location": "Backend Engineer | Java, Spring Boot, Microservices | GCP Certified | Docker, Kubernetes, Jenkins, Rancher | Cloud Migration | Open to Work | Pune, Bengaluru | Remote",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Ayush Tiwari \n \n\nSoftware Engineer 2 at Wayfair\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Software Engineer 2 at Wayfair - ...system portal for suppliers, handling both backend...\n\nAayush Gupta is a mutual connection",
-        "headline": "Ayush Tiwari \n \n\nSoftware Engineer 2 at Wayfair\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/tayush/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/ramit-kundu-b3b91014a/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Md Fahad \n \n\nSWE-2 @ Microsoft (Azure PostgreSQL) | Ex-Amazon, CoinSwitch | IIEST Shibpur\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Software Engineer 2 at Microsoft\n\nAayush Gupta is a mutual connection",
-        "headline": "Md Fahad \n \n\nSWE-2 @ Microsoft (Azure PostgreSQL) | Ex-Amazon, CoinSwitch | IIEST Shibpur\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/fahadslytherin/"
+        "name": "Rohan Vinod Chavhan",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/parthiv-gundubogula-b760a7258/",
+        "location": "Backend Engineer | Java, Spring Boot, Microservices | GCP Certified | Docker, Kubernetes, Jenkins, Rancher | Cloud Migration | Open to Work | Pune, Bengaluru | Remote",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Rajan Sharma \n \n\nSWE-II @Google | Ex-Razorpay\n\nBengaluru, Karnataka, India\n\nFollow\n\nCurrent: Software Engineer at Google\n\n7K followers",
-        "headline": "Rajan Sharma \n \n\nSWE-II @Google | Ex-Razorpay\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/rajan226/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/kkdubey20/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Rohan Vinod Chavhan",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/rohitsingh-/",
+        "location": "Backend Engineer | Java, Spring Boot, Microservices | GCP Certified | Docker, Kubernetes, Jenkins, Rancher | Cloud Migration | Open to Work | Pune, Bengaluru | Remote",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/k-ranga-ravi-teja/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/tayush/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/samyak-jain-10/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Rohan Vinod Chavhan",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/vishwa-mohan/",
+        "location": "Backend Engineer | Java, Spring Boot, Microservices | GCP Certified | Docker, Kubernetes, Jenkins, Rancher | Cloud Migration | Open to Work | Pune, Bengaluru | Remote",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/dhananjay-kumar-b748a7176/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       }
     ]
   },
   "AI Engineer Bengaluru": {
-    "count": 10,
+    "count": 17,
     "data": [
       {
-        "name": "Varun Shivaram \n \n\nAspiring Software Engineer | B.E. Candidate at Dayananda Sagar College of Engineering, Bengaluru | Passionate About Web Development and AI Engineering\n\nBengaluru, Karnataka, India\n\nConnect\n\nPast: AI Project-Based Intern \u2014 TechSaksham (Microsoft & SAP CSR Initiative) at Edunet Foundation",
-        "headline": "Varun Shivaram \n \n\nAspiring Software Engineer | B.E. Candidate at Dayananda Sagar College of Engineering, Bengaluru | Passionate About Web Development and AI Engineering\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/varun-shivaram-32538132b/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/varun-shivaram-32538132b/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Nikhil Lepakshi \n \n\nSenior ML/AI Engineer | GenAI & LLM Systems | Production RAG & Agentic AI\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Member of technical staff 4 (Senior Data Scientist) at Amadeus Labs - ...AI principles.  Built multi-agent workflows...\n\nSaurabh Moharikar is a mutual connection",
-        "headline": "Nikhil Lepakshi \n \n\nSenior ML/AI Engineer | GenAI & LLM Systems | Production RAG & Agentic AI\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/nikhillepakshi/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/nikhillepakshi/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Harish A.N \n\nData Scientist | AI/ML Engineer | GenAI & RAG Systems | 1.5 Years Experience | Bengaluru\n\nBengaluru, Karnataka, India\n\nConnect\n\nSummary: Data Scientist &amp; AI Engineer with 1.5+ years...",
-        "headline": "Harish A.N \n\nData Scientist | AI/ML Engineer | GenAI & RAG Systems | 1.5 Years Experience | Bengaluru\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/harish-an-data-scientist/"
+        "name": "Varun Shivaram",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/saurabhmoharikar/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Jaya Siddartha \n \n\nAI/ML Engineer \u00b7 Researcher (ADCIS 2025) \u00b7 5\u00d7 Hackathon Award Winner \u00b7 Best Innovation Award (Quest Global) \u00b7 Startup Builder \u00b7 B.E. AIML @ DSCE Bengaluru\n\nGreater Bengaluru Area\n\nConnect\n\nSummary: ...the solution.I'm an AI/ML engineer and full-stack...",
-        "headline": "Jaya Siddartha \n \n\nAI/ML Engineer \u00b7 Researcher (ADCIS 2025) \u00b7 5\u00d7 Hackathon Award Winner \u00b7 Best Innovation Award (Quest Global) \u00b7 Startup Builder \u00b7 B.E. AIML @ DSCE Bengaluru\n\nGreater Bengaluru Area",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/jaya-siddartha-b69552311/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/harish-an-data-scientist/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Akanksha R \n \n\nAI Enabled Software Engineer, BGSW Bengaluru | EVOLVE | UX Enthusiast | Writer at Bootcamp by UX Collective\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Software Engineer at Bosch Global Software Technologies",
-        "headline": "Akanksha R \n \n\nAI Enabled Software Engineer, BGSW Bengaluru | EVOLVE | UX Enthusiast | Writer at Bootcamp by UX Collective\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/akanksharao12/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/jaya-siddartha-b69552311/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "NAIVIKA REDDY \n\nAndroid app development using Gen AI | Computer science and Engineering | studying final year in the Sri Venkateshwara College of Engineering Bengaluru\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Software Engineer at Microsoft\n\nChaithanya H and Jahnavi S T are mutual connections",
-        "headline": "NAIVIKA REDDY \n\nAndroid app development using Gen AI | Computer science and Engineering | studying final year in the Sri Venkateshwara College of Engineering Bengaluru\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/naivika-reddy-28369b2b0/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/akanksharao12/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Arindam Chakraborty \n \n\nResearcher @ IISc Bengaluru | Computer Vision \n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Project Associate I at Indian Institute of Science (IISc) - Engineering scalable backend systems with applied AI\n\nAshutosh Singh is a mutual connection",
-        "headline": "Arindam Chakraborty \n \n\nResearcher @ IISc Bengaluru | Computer Vision \n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/arindm007/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/naivika-reddy-28369b2b0/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Shashank Hegde \n \n\nEngineering at Sarvam AI | Ex Founding Engineer at Profile FYI\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Software Engineer at Sarvam\n\nAditya Kumar Barawal is a mutual connection",
-        "headline": "Shashank Hegde \n \n\nEngineering at Sarvam AI | Ex Founding Engineer at Profile FYI\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/shashank--hegde/"
+        "name": "Varun Shivaram",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/chaithanya-h-673155292/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Ajay H M \n \n\nSoftware Developer | Full Stack Developer (React \u00b7 Python \u00b7 Django) | 3\u00d7 Intern \u00b7 Bengaluru \u00b7 Open to Work\n\nGreater Bengaluru Area\n\nConnect\n\nSummary: ...Science &amp; Design engineer (graduating 2026, K.S. Institute of Technology, Bengaluru) with 3...\n\nGautam keshri is a mutual connection",
-        "headline": "Ajay H M \n \n\nSoftware Developer | Full Stack Developer (React \u00b7 Python \u00b7 Django) | 3\u00d7 Intern \u00b7 Bengaluru \u00b7 Open to Work\n\nGreater Bengaluru Area",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/ajayhm11/"
+        "name": "Varun Shivaram",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/jahnavi-s-t/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Ayush Cherkhiya \n \n\nSDE 3 | 7+ YOE | Bengaluru | Wissen Technology | Morgan Stanley | Investment Banking | AI | Front End Developer | React | Javascript | State Management | APIs | Building fast, scalable UIs\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Principal Engineer at Wissen Technology\n\nAnurag Tiwari is a mutual connection",
-        "headline": "Ayush Cherkhiya \n \n\nSDE 3 | 7+ YOE | Bengaluru | Wissen Technology | Morgan Stanley | Investment Banking | AI | Front End Developer | React | Javascript | State Management | APIs | Building fast, scalable UIs\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/ayush-cherkhiya-1308/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/arindm007/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Varun Shivaram",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/ashutosh-singh-757360317/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/shashank--hegde/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Varun Shivaram",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/adiikumar/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/ajayhm11/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Varun Shivaram",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/gautam-keshri/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/ayush-cherkhiya-1308/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Varun Shivaram",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/anuragtiwarime/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
       }
     ]
   },
   "DevOps Engineer Bengaluru": {
-    "count": 10,
+    "count": 17,
     "data": [
       {
-        "name": "Dileep Kumar B T \n \n\nSenior DevOps & Site Reliability Engineer | Optimizing Infrastructure & Automation | Bengaluru\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Senior DevOps Engineer at Happiest Minds Technologies\n\nSoumya Naik is a mutual connection",
-        "headline": "Dileep Kumar B T \n \n\nSenior DevOps & Site Reliability Engineer | Optimizing Infrastructure & Automation | Bengaluru\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/dileepkumarbt/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/dileepkumarbt/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Vivek M \n \n\nCloud & DevOps Engineer | AWS Certified | Terraform \n\nBengaluru, Karnataka, India\n\nConnect\n\nSummary: ...Engineer based in Bengaluru, passionate about building...\n\nChaithanya H is a mutual connection",
-        "headline": "Vivek M \n \n\nCloud & DevOps Engineer | AWS Certified | Terraform \n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/vivek-m-76a535251/"
+        "name": "Dileep Kumar B T",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/soumya-naik-b97295186/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Arpita Das \n \n\nSoftware Engineer @Google Deepmind\n\nBengaluru, Karnataka, India\n\nConnect\n\nCurrent: Software Engineer 2 at Google\n\nNikita Shaw and Veer Vikram Singh are mutual connections",
-        "headline": "Arpita Das \n \n\nSoftware Engineer @Google Deepmind\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/arpitadas01/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/vivek-m-76a535251/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Abhinav C. \n \n\nDevOps Engineer | Azure \u00b7 AKS \u00b7 CI/CD \u00b7 MLOps \u00b7 IaC \u00b7 Python \u00b7 Prometheus | Bengaluru\n\nBengaluru, Karnataka, India\n\nMessage\n\nCurrent: DevOps & AI Infrastructure Engineer at Comnet Infotech",
-        "headline": "Abhinav C. \n \n\nDevOps Engineer | Azure \u00b7 AKS \u00b7 CI/CD \u00b7 MLOps \u00b7 IaC \u00b7 Python \u00b7 Prometheus | Bengaluru\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/abhinav-chauhan-s7/"
+        "name": "Dileep Kumar B T",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/chaithanya-h-673155292/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Rahul C \n\nTeam lead @ Amazon Bengaluru \nHaving a total  8 years of experience in IT \nHas 7.8 years experience in software configuration domain devOps Engineer continue integration & delivery build\n\nIndia\n\nMessage\n\nPast: DevOps Engineer at SK MANFEILD SEVICES PVT LTD",
-        "headline": "Rahul C \n\nTeam lead @ Amazon Bengaluru \nHaving a total  8 years of experience in IT \nHas 7.8 years experience in software configuration domain devOps Engineer continue integration & delivery build\n\nIndia",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/rahul-c-70a983290/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/rahul-c-70a983290/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Akshaye Vivekanandan \n\nDevops Engineer @ HCL Tech Bengaluru \nGitLab|| Kubernetes || Docker\n\nBengaluru, Karnataka, India\n\nMessage\n\nPast: DevOps Engineer at HCL Technologies",
-        "headline": "Akshaye Vivekanandan \n\nDevops Engineer @ HCL Tech Bengaluru \nGitLab|| Kubernetes || Docker\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/akshaye-vivekanandan-2407a5112/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/arpitadas01/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Vikas GN \n \n\nAUTOMOTIVE | INFOTAINMENT | OTA |\nDevOps Engineer @ Mercedes-Benz Research and Development India, Bengaluru\n\nBengaluru, Karnataka, India\n\nFollow\n\nCurrent: DevOps Engineer at HARMAN International\n\n168 followers",
-        "headline": "Vikas GN \n \n\nAUTOMOTIVE | INFOTAINMENT | OTA |\nDevOps Engineer @ Mercedes-Benz Research and Development India, Bengaluru\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/vikas-gn-space/"
+        "name": "Dileep Kumar B T",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/nikita-shaw-428592136/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Gourav K. \n \n\nDatabricks Data Engineer | PySpark & Delta Lake ETL Pipelines | SQL | Python | Azure Fundamentals | Big Data | Data Science | IIIT-B Alum | Aws DevOps Engineer@ Star Agile | Bengaluru #DataEngineering\n\nBengaluru, Karnataka, India\n\nFollow\n\nCurrent: Data Engineer \u2014 Projects at Personal / Academic Data Engineering Projects\n\n688 followers\n\nVishwa Mohan is a mutual connection",
-        "headline": "Gourav K. \n \n\nDatabricks Data Engineer | PySpark & Delta Lake ETL Pipelines | SQL | Python | Azure Fundamentals | Big Data | Data Science | IIIT-B Alum | Aws DevOps Engineer@ Star Agile | Bengaluru #DataEngineering\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/gourav-kumara/"
+        "name": "Dileep Kumar B T",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/veervikramsingh1/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Shivansh Kumar \n \n\nDevOps Engineer II @ Licious |  Ex Lenskart | LLMOPS | GitOps\n\nGreater Bengaluru Area\n\nConnect\n\nCurrent: DevOps Engineer II at Licious\n\nAnurag Tiwari is a mutual connection",
-        "headline": "Shivansh Kumar \n \n\nDevOps Engineer II @ Licious |  Ex Lenskart | LLMOPS | GitOps\n\nGreater Bengaluru Area",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/shivansh5/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/abhinav-chauhan-s7/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
       },
       {
-        "name": "Chandana CM \n \n\nAWS DevOps Engineer | Tech Lead | 9 Yrs Exp | GIT | Jenkins | Docker | Terraform | Kubernetes | Ansible | Helm | Bengaluru\n\nBengaluru, Karnataka, India\n\nMessage\n\nSkills: DevOps",
-        "headline": "Chandana CM \n \n\nAWS DevOps Engineer | Tech Lead | 9 Yrs Exp | GIT | Jenkins | Docker | Terraform | Kubernetes | Ansible | Helm | Bengaluru\n\nBengaluru, Karnataka, India",
-        "location": "",
-        "profile_url": "https://www.linkedin.com/in/chandana-cm-334066108/"
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/akshaye-vivekanandan-2407a5112/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/vikas-gn-space/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/gourav-kumara/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Dileep Kumar B T",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/vishwa-mohan/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/chandana-cm-334066108/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Sushrut, you might benefit from unlimited search",
+        "headline": "Boost your power by upgrading to Premium Business so you can search and browse anyone without limits.",
+        "profile_url": "https://www.linkedin.com/in/monika48912/",
+        "location": "Try Premium for \u20b90",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Dileep Kumar B T",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/gaurav-thadani-520aab11b/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
+      },
+      {
+        "name": "Dileep Kumar B T",
+        "headline": "",
+        "profile_url": "https://www.linkedin.com/in/hemarupavathi/",
+        "location": "Bengaluru, Karnataka, India",
+        "discovery_confidence": 0.9
       }
     ]
   }

@@ -1,5 +1,6 @@
 import os
 import logging
+import asyncio
 from celery import Celery
 from sqlalchemy.orm import Session
 from .db.session import SessionLocal
@@ -13,7 +14,7 @@ celery_app = Celery("bsop_worker", broker=REDIS_URL, backend=REDIS_URL)
 logger = logging.getLogger(__name__)
 
 @celery_app.task(name="run_hiring_workflow")
-def run_hiring_workflow(job_id: str, query: str):
+def run_hiring_workflow_task(job_id: str, query: str):
     """
     Main Celery task to execute the autonomous hiring pipeline.
     """
@@ -26,8 +27,8 @@ def run_hiring_workflow(job_id: str, query: str):
         # 2. Initialize Executive Agent
         orchestrator = ExecutiveAgent(job_id=job_id, db=db)
         
-        # 3. Run Pipeline
-        ranked_candidates = orchestrator.run(query)
+        # 3. Run Pipeline asynchronously
+        ranked_candidates = asyncio.run(orchestrator.run(query))
         
         # 4. Persist Final Results
         for rank, candidate in enumerate(ranked_candidates):

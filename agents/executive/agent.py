@@ -1,7 +1,8 @@
 import logging
+import asyncio
 from typing import Dict, Any, List, Union, Optional
 from agents.base import BaseAgent
-from core.intelligence.recruiter_requirements import RecruiterRequirements
+from config.schemas import RecruiterRequirements
 from core.intelligence.intent_parser import RecruiterIntentParser
 from omium.tracing import trace
 
@@ -15,7 +16,7 @@ class ExecutiveAgent(BaseAgent):
         super().__init__(name="Executive", role="Chief Recruitment Architect", job_id=job_id, db=db)
         self.intent_parser = RecruiterIntentParser()
 
-    def plan_and_execute(self, query: str):
+    async def plan_and_execute(self, query: Union[str, Dict[str, Any]]):
         """
         The Master Orchestration Loop.
         1. Planning (Intent Parsing)
@@ -28,13 +29,29 @@ class ExecutiveAgent(BaseAgent):
         self.log(f"Planning workflow for query: {query}", step="planning")
         
         # 1. Parse Requirements
-        requirements = self.intent_parser.parse(query)
+        if isinstance(query, str):
+            intent = self.intent_parser.parse(query)
+            requirements = RecruiterRequirements(
+                role=intent.role,
+                location=intent.location or "Remote",
+                required_skills=intent.skills,
+                preferred_companies=intent.preferred_companies,
+            )
+        elif isinstance(query, dict):
+            requirements = RecruiterRequirements(**query)
+        else:
+            requirements = query
+
         self.log(f"Autonomous strategy generated for {requirements.role}", step="planning")
         
         # 2. Assign Browser Agent for Extraction
         from agents.browser.agent import BrowserAgent
         browser_agent = BrowserAgent(job_id=self.job_id, db=self.db)
-        candidates = browser_agent.run(requirements)
+
+        try:
+            candidates = await browser_agent.run(requirements)
+        finally:
+            await browser_agent.close()
         
         if not candidates:
             self.log("No candidates found in extraction phase.", level=logging.ERROR, step="extraction")
@@ -104,5 +121,5 @@ class ExecutiveAgent(BaseAgent):
         else:
             return "Potential match. Requires manual verification of technical depth."
 
-    def run(self, query: str):
-        return self.plan_and_execute(query)
+    async def run(self, query: Union[str, Dict[str, Any]]):
+        return await self.plan_and_execute(query)

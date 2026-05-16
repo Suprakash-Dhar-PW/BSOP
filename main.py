@@ -1,5 +1,6 @@
 import sys
 import logging
+import asyncio
 from workflows.hiring import run_hiring_workflow
 
 def main():
@@ -12,7 +13,7 @@ def main():
         objective = " ".join(sys.argv[1:])
         
     try:
-        run_hiring_workflow(objective)
+        asyncio.run(run_hiring_workflow(objective))
     except Exception as e:
         logging.error(f"Workflow execution failed: {e}")
         sys.exit(1)

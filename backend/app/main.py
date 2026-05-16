@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 
 from .db.session import SessionLocal, engine
 from .models import database, crud
-from .worker.tasks import run_hiring_workflow
+from .worker.tasks import run_hiring_workflow_task
 
 # Create tables if they don't exist
 database.Base.metadata.create_all(bind=engine)
@@ -40,7 +40,7 @@ async def create_search(query: str, db: Session = Depends(get_db)):
     crud.create_search_job(db, job_id, query)
     
     # 2. Queue Celery Task
-    run_hiring_workflow.delay(job_id, query)
+    run_hiring_workflow_task.delay(job_id, query)
     
     return {
         "job_id": job_id,
