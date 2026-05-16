@@ -81,7 +81,7 @@ class ResearchAgent(BaseAgent):
             seniority = "Junior"
             inferred_exp = max(inferred_exp, 1)
 
-        exp_score = min(inferred_exp / max(req.min_experience, 1), 1.2) if req.min_experience > 0 else 1.0
+        exp_score = min(inferred_exp / max(req.minimum_experience, 1), 1.2) if req.minimum_experience > 0 else 1.0
         
         # 4. Company Quality & Career Consistency (10%)
         company_score = 0.5

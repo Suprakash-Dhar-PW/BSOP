@@ -1,4 +1,5 @@
 import logging
+import asyncio
 from typing import Dict, Any, Union
 from agents.executive.agent import ExecutiveAgent
 from agents.browser.agent import BrowserAgent
@@ -10,7 +11,7 @@ from omium.tracing import trace
 
 logger = logging.getLogger("[Workflow Orchestrator]")
 
-def run_hiring_workflow(input_data: Union[str, Dict[str, Any]]):
+async def run_hiring_workflow(input_data: Union[str, Dict[str, Any]]):
     """
     Executes the BSOP Autonomous Hiring Intelligence Workflow.
     Now fully recruiter-driven and dynamic.
@@ -25,9 +26,6 @@ def run_hiring_workflow(input_data: Union[str, Dict[str, Any]]):
     
     # 1. Initialize Autonomous Workforce
     executive = ExecutiveAgent()
-    browser = BrowserAgent()
-    research = ResearchAgent()
-    github = GitHubAgent()
     reporting = ReportingAgent()
     
     try:
@@ -35,40 +33,28 @@ def run_hiring_workflow(input_data: Union[str, Dict[str, Any]]):
         print(">>> BSOP AUTONOMOUS HIRING INTELLIGENCE PLATFORM <<<")
         print("="*80 + "\n")
         
-        # 2. Executive: Recruiter Intent Engine
-        # Architect requirements and dynamic search strategy
+        # 2. Executive: Recruiter Intent Engine & Full Execution
         trace("Executive Requirements Engineering")
-        requirements: RecruiterRequirements = executive.run(input_data)
         
+        # Parse objective for reporting and requirements
+        if isinstance(input_data, str):
+            # Parse it to a dict first to map RecruiterIntent to RecruiterRequirements
+            intent = executive.intent_parser.parse(input_data)
+            requirements = RecruiterRequirements(
+                role=intent.role,
+                location=intent.location or "Remote",
+                required_skills=intent.skills,
+                preferred_companies=intent.preferred_companies,
+            )
+        else:
+            requirements = RecruiterRequirements(**input_data)
+
+        # The executive agent orchestrates browser, research, and github internally
+        # Executive Agent expects the raw string query if it's a string, or requirements.
+        
+        ranked_candidates = await executive.run(input_data)
+
         self_objective = requirements.role + " in " + requirements.location
-        
-        # 3. Browser Agent: Entity-Centric Discovery
-        # Searches and extracts candidate entities using dynamic search strategy
-        trace("Browser Intelligence Discovery")
-        candidate_entities = browser.run(requirements)
-        
-        if not candidate_entities:
-            logger.error("No candidate entities discovered. Workflow terminated.")
-            return
-
-        # 4. Research Agent: Intelligent Semantic Analysis
-        # Evaluates required/preferred skills, seniority, and specialization
-        trace("Research Intelligence Analysis")
-        analyzed_candidates = research.run(candidate_entities, requirements)
-        
-        if not analyzed_candidates:
-            logger.warning("All candidates filtered out during research analysis.")
-            return
-
-        # 5. GitHub Agent: Technical Depth Evaluation
-        # Analyzes engineering footprint based on recruiter stack requirements
-        trace("Technical Depth Evaluation")
-        technical_candidates = github.run(analyzed_candidates, requirements)
-        
-        # 6. Executive: Final Recruiter-Weighted Ranking
-        # Implements the Enterprise Scoring System based on dynamic intent
-        trace("Final Intelligence Ranking")
-        ranked_candidates = executive.rank_candidates(technical_candidates, requirements)
         
         # 7. Reporting Agent: Enterprise Intelligence Summary
         trace("Report Generation")
@@ -85,14 +71,8 @@ def run_hiring_workflow(input_data: Union[str, Dict[str, Any]]):
         import traceback
         logger.error(traceback.format_exc())
         trace("Workflow Failed")
-    finally:
-        browser.close()
 
 if __name__ == "__main__":
-    # Example 1: High-level recruitment objective (parsed by ExecutiveAgent)
-    # run_hiring_workflow("Find top-tier Frontend Engineers in Bengaluru with React and TypeScript expertise")
-    
-    # Example 2: Structured Recruiter Requirements (Direct Intent)
     recruiter_intent = {
         "role": "Backend Engineer",
         "location": "Bengaluru",
@@ -107,4 +87,4 @@ if __name__ == "__main__":
         "max_candidates": 3
     }
     
-    run_hiring_workflow(recruiter_intent)
+    asyncio.run(run_hiring_workflow(recruiter_intent))
